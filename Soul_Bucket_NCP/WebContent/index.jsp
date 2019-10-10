@@ -10,7 +10,7 @@
 <body>
 
 
-<% 
+<% 	
 String connectionURL = "jdbc:mysql://localhost/test"; 
 Connection connection = null; 
 Class.forName("com.mysql.jdbc.Driver").newInstance();

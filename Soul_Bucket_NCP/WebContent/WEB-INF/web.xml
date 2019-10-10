@@ -1,12 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>Soul_Bucket</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">	
+  
+  <display-name>Home</display-name>
+  <servlet>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>com.soulbucket.pkg.Home</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RegisterController</servlet-name>
+        <servlet-class>com.soulbucket.pkg.RegisterController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterController</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    
+    
+        <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.soulbucket.pkg.LoginController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DashBoard</servlet-name>
+        <servlet-class>com.soulbucket.pkg.DashBoard</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DashBoard</servlet-name>
+        <url-pattern>/Dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.soulbucket.pkg.LogoutController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/LogoutController</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>InsertHandler</servlet-name>
+        <servlet-class>com.soulbucket.pkg.InsertHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InsertHandler</servlet-name>
+        <url-pattern>/InsertHandler</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdateHandler</servlet-name>
+        <servlet-class>com.soulbucket.pkg.UpdateHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateHandler</servlet-name>
+        <url-pattern>/UpdateHandler</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>DeleteHandler</servlet-name>
+        <servlet-class>com.soulbucket.pkg.DeleteHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteHandler</servlet-name>
+        <url-pattern>/DeleteHandler</url-pattern>
+    </servlet-mapping>
+    
+    
 </web-app>
